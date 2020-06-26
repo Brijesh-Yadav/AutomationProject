@@ -2,7 +2,6 @@ package com.automationproject.testscript;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.automationproject.driver.BaseClass;
 import com.automationproject.pageobjects.JqueryHomePage;
 

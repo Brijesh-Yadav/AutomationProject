@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,  2 skipped,  2 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -108,25 +108,6 @@
                     </div> <!-- method-list-content failed suite-Suite1 -->
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite1" class="hide-methods skipped suite-Suite1"> (hide)</a> <!-- hide-methods skipped suite-Suite1 -->
-                      <a href="#" panel-name="suite-Suite1" class="show-methods skipped suite-Suite1"> (show)</a> <!-- show-methods skipped suite-Suite1 -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite1">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.automationproject.testscript.Jquery" hash-for-method="colorVerfication">colorVerfication</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.automationproject.testscript.Jquery" hash-for-method="toggleSizeVerificatiom">toggleSizeVerificatiom</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite1 -->
-                  </li>
-                  <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
                       <a href="#" panel-name="suite-Suite1" class="hide-methods passed suite-Suite1"> (hide)</a> <!-- hide-methods passed suite-Suite1 -->
@@ -135,12 +116,22 @@
                     <div class="method-list-content passed suite-Suite1">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.automationproject.testscript.Jquery" hash-for-method="colorVerfication">colorVerfication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.automationproject.testscript.NDTVBusiness" hash-for-method="printAllBottomMenusLinks">printAllBottomMenusLinks</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.automationproject.testscript.NDTVBusiness" hash-for-method="printAllTopMenusLinks">printAllTopMenusLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.automationproject.testscript.Jquery" hash-for-method="toggleSizeVerificatiom">toggleSizeVerificatiom</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite1 -->
@@ -175,9 +166,9 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite1-class-failed -->
-          <div class="suite-Suite1-class-skipped">
+          <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.automationproject.testscript.Jquery</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -186,43 +177,6 @@
                   <a name="colorVerfication">
                   </a> <!-- colorVerfication -->
                   <span class="method-name">colorVerfication</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;4.0.0-alpha-5&apos;, revision: &apos;b3a0d621cc&apos;
-System info: host: &apos;BRIJESH-HP&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Brijesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52726}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d4787201025f5fa5ca389a386568be23
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:282)
-	at com.automationproject.driver.BaseClass.launchBrowser(BaseClass.java:14)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:47)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	... 37 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:27196 after 60000 ms
-	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
-	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1908)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
-	... 46 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:27196 after 60000 ms
-	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -230,47 +184,10 @@ Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/1
                   <a name="toggleSizeVerificatiom">
                   </a> <!-- toggleSizeVerificatiom -->
                   <span class="method-name">toggleSizeVerificatiom</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;4.0.0-alpha-5&apos;, revision: &apos;b3a0d621cc&apos;
-System info: host: &apos;BRIJESH-HP&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Brijesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52726}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d4787201025f5fa5ca389a386568be23
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:282)
-	at com.automationproject.driver.BaseClass.launchBrowser(BaseClass.java:14)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:47)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	... 37 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:27196 after 60000 ms
-	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
-	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1908)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
-	... 46 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:27196 after 60000 ms
-	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite1-class-skipped -->
+          </div> <!-- suite-Suite1-class-passed -->
           <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -357,30 +274,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'printAllTopMenusLinks')
-data.setCell(0, 2, 'com.automationproject.testscript.NDTVBusiness')
-data.setCell(0, 3, 6573);
+data.setCell(0, 1, 'colorVerfication')
+data.setCell(0, 2, 'com.automationproject.testscript.Jquery')
+data.setCell(0, 3, 10630);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'printAllBottomMenusLinks')
+data.setCell(1, 1, 'printAllTopMenusLinks')
 data.setCell(1, 2, 'com.automationproject.testscript.NDTVBusiness')
-data.setCell(1, 3, 840);
+data.setCell(1, 3, 3211);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'CheckBusinessLinkInFooter')
+data.setCell(2, 1, 'printAllBottomMenusLinks')
 data.setCell(2, 2, 'com.automationproject.testscript.NDTVBusiness')
-data.setCell(2, 3, 496);
+data.setCell(2, 3, 809);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'toggleSizeVerificatiom')
-data.setCell(3, 2, 'com.automationproject.testscript.Jquery')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'CheckBusinessLinkInFooter')
+data.setCell(3, 2, 'com.automationproject.testscript.NDTVBusiness')
+data.setCell(3, 3, 313);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'colorVerfication')
+data.setCell(4, 1, 'toggleSizeVerificatiom')
 data.setCell(4, 2, 'com.automationproject.testscript.Jquery')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 1);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -408,47 +325,46 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.automationproject.testscript.Jquery</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">launchBrowser(https://jqueryui.com/animate/)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">colorVerfication</span>
+                <span class="method-start">17315 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">toggleSizeVerificatiom</span>
+                <span class="method-start">27950 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">27952 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automationproject.testscript.NDTVBusiness</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser(https://www.ndtv.com/business)</span>
-                <span class="method-start">73898 ms</span>
+                <span class="method-start">30358 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">printAllTopMenusLinks</span>
-                <span class="method-start">101519 ms</span>
+                <span class="method-start">38330 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">printAllBottomMenusLinks</span>
-                <span class="method-start">108095 ms</span>
+                <span class="method-start">41542 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">CheckBusinessLinkInFooter</span>
-                <span class="method-start">108936 ms</span>
+                <span class="method-start">42355 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">109433 ms</span>
+                <span class="method-start">42673 ms</span>
               </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automationproject.testscript.Jquery</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">colorVerfication</span>
-                <span class="method-start">-1593164117329 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">toggleSizeVerificatiom</span>
-                <span class="method-start">-1593164117329 ms</span>
-              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
