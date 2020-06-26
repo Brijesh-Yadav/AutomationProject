@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="45137" started-at="2020-06-22T17:48:02Z" finished-at="2020-06-22T17:48:47Z">
+    <groups>
+    </groups>
+    <test name="Verify Animate Box" duration-ms="30413" started-at="2020-06-22T17:48:02Z" finished-at="2020-06-22T17:48:32Z">
+      <class name="com.automationproject.testscript.Jquery">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.automationproject.testscript.Jquery@1e397ed7]" name="launchBrowser" is-config="true" duration-ms="17167" started-at="2020-06-22T17:48:02Z" finished-at="2020-06-22T17:48:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://jqueryui.com/animate/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="colorVerfication()[pri:1, instance:com.automationproject.testscript.Jquery@1e397ed7]" name="colorVerfication" duration-ms="10722" started-at="2020-06-22T17:48:19Z" finished-at="2020-06-22T17:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- colorVerfication -->
+        <test-method status="PASS" signature="toggleSizeVerificatiom()[pri:2, instance:com.automationproject.testscript.Jquery@1e397ed7]" name="toggleSizeVerificatiom" duration-ms="3" started-at="2020-06-22T17:48:30Z" finished-at="2020-06-22T17:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toggleSizeVerificatiom -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.automationproject.testscript.Jquery@1e397ed7]" name="closeBrowser" is-config="true" duration-ms="2366" started-at="2020-06-22T17:48:30Z" finished-at="2020-06-22T17:48:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.automationproject.testscript.Jquery -->
+    </test> <!-- Verify Animate Box -->
+    <test name="Verfify Links" duration-ms="14589" started-at="2020-06-22T17:48:32Z" finished-at="2020-06-22T17:48:47Z">
+      <class name="com.automationproject.testscript.NDTVBusiness">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.automationproject.testscript.NDTVBusiness@6d7b4f4c]" name="launchBrowser" is-config="true" duration-ms="8310" started-at="2020-06-22T17:48:32Z" finished-at="2020-06-22T17:48:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.ndtv.com/business]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="printAllTopMenusLinks()[pri:1, instance:com.automationproject.testscript.NDTVBusiness@6d7b4f4c]" name="printAllTopMenusLinks" duration-ms="3083" started-at="2020-06-22T17:48:41Z" finished-at="2020-06-22T17:48:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printAllTopMenusLinks -->
+        <test-method status="PASS" signature="printAllBottomMenusLinks()[pri:2, instance:com.automationproject.testscript.NDTVBusiness@6d7b4f4c]" name="printAllBottomMenusLinks" duration-ms="709" started-at="2020-06-22T17:48:44Z" finished-at="2020-06-22T17:48:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printAllBottomMenusLinks -->
+        <test-method status="FAIL" signature="CheckBusinessLinkInFooter()[pri:3, instance:com.automationproject.testscript.NDTVBusiness@6d7b4f4c]" name="CheckBusinessLinkInFooter" duration-ms="297" started-at="2020-06-22T17:48:44Z" finished-at="2020-06-22T17:48:45Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Top business link is not present in bottom linklist]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Top business link is not present in bottom linklist
+at org.testng.Assert.fail(Assert.java:96)
+at com.automationproject.pageobjects.NDTVHomePage.comparetoplinkInBottomMenu(NDTVHomePage.java:65)
+at com.automationproject.testscript.NDTVBusiness.CheckBusinessLinkInFooter(NDTVBusiness.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBusinessLinkInFooter -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.automationproject.testscript.NDTVBusiness@6d7b4f4c]" name="closeBrowser" is-config="true" duration-ms="2164" started-at="2020-06-22T17:48:45Z" finished-at="2020-06-22T17:48:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.automationproject.testscript.NDTVBusiness -->
+    </test> <!-- Verfify Links -->
+  </suite> <!-- Suite1 -->
+</testng-results>

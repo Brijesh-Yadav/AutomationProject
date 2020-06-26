@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite1" verbose="1">
+	<!-- https://reqres.in/api/users?page=2 -->
+	<!-- https://www.ndtv.com/business -->
+
+	<test name="Verify Animate Box">
+		<parameter name="url" value="https://jqueryui.com/animate/" />
+		<classes>
+			<class name="com.automationproject.testscript.Jquery">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Verfify Links">
+		<parameter name="url" value="https://www.ndtv.com/business" />
+		<classes>
+			<class name="com.automationproject.testscript.NDTVBusiness">
+			</class>
+		</classes>
+	</test>
+
+</suite>

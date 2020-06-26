@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test thread-count="5" name="Verfify Links(failed)">
+    <parameter name="url" value="https://www.ndtv.com/business"/>
+    <classes>
+      <class name="com.automationproject.testscript.NDTVBusiness">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="CheckBusinessLinkInFooter"/>
+        </methods>
+      </class> <!-- com.automationproject.testscript.NDTVBusiness -->
+    </classes>
+  </test> <!-- Verfify Links(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
